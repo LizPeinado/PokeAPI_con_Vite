@@ -1,0 +1,138 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #ef4444;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-form input:focus {
+  border-color: #ef4444;
+}
+
+.search-form button {
+  padding: 12px 25px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #dc2626;
+}
+
+.message {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.error-message {
+  color: #ef4444;
+}
+
+/* Tarjeta del Pokémon */
+.pokemon-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-id {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-weight: bold;
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+.pokemon-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 5px rgba(0,0,0,0.15));
+}
+
+.pokemon-title {
+  text-transform: capitalize;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+/* Estilos para los tipos */
+.types-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.type-badge {
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Colores por tipo (algunos ejemplos básicos) */
+.electric { background-color: #f59e0b; }
+.fire { background-color: #ef4444; }
+.water { background-color: #3b82f6; }
+.grass { background-color: #10b981; }
+.poison { background-color: #a855f7; }
+.flying { background-color: #6366f1; }
+.normal { background-color: #9ca3af; }
